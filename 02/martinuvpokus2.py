@@ -2,7 +2,7 @@ from random import choice
 
 var = ('kámen', 'nůžky', 'papír')
 
-volba_pocitace = volba(var)
+volba_pocitace = choice(var)
 print('Zvolte kámen, nůžky, nebo papír: ')
 volba_cloveka = input()
 
