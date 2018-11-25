@@ -8,7 +8,7 @@ volba_cloveka = input()
 
 print('Člověk zvolil {} a počítač zvolil {}'.format(volba_cloveka, volba_pocitace))
 
-if volba_pocitace == human_choice:
+if volba_pocitace == volba_cloveka:
     print('plichta')
 elif (volba_pocitace == 'kámen' and volba_cloveka == 'nůžky') \
   or (volba_pocitace == 'papír' and volba_cloveka == 'kámen') \
