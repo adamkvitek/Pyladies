@@ -30,6 +30,15 @@ class SpaceShip:
                 self.x_speed += 20*delta*math.sin(rot_rad)
                 self.y_speed += 20*delta*math.cos(rot_rad)
 
+            if self.x > WIDTH:
+                self.x = 0
+            if self.x < 0:
+                self.x = WIDTH
+            if self.y > HEIGHT:
+                self.y = 0
+            if self.y < 0:
+                self.y = HEIGHT
+
             self.x += self.x_speed * delta
             self.y += self.y_speed * delta
             self.sprite.x = self.x

@@ -3,13 +3,16 @@
 
 class Kotatko:
     def zamnoukej(self):
-        print('Mnau!')
+        print('{}: Mnau!'.format(self.jmeno))
 
-kotatko = Kotatko()
-kotatko.zamnoukej()
+    def snez(self, jidlo):
+        print("{}: Mňau mňau! {} mi chutná!".format(self.jmeno, jidlo))
+
+mourek = Kotatko()
+mourek.jmeno = 'Mourek'
+mourek.snez('ryba')
 
                     # kotatko je instance tridy Kotatko - instance je uskutečnění,
                     # třída je formička
                     # objekt třídy = instance
-
 
