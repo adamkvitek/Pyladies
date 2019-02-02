@@ -1,0 +1,55 @@
+ Wi-fi: Red Hat Guest
+Heslo: navigate17
+Etherpad: https://etherpad.gnome.org/p/snake-workshop-brno
+Materiály: https://naucse.python.cz/2019/brno-jaro-snake/
+
+Etherpad
+
+Toto je etherpad, sdílený dokument. Můžeš tu text číst, ale i měnit – opravovat chyby, přidávat poznámky, ptát se na otázky.
+Prosím, nezneužívej toho :)
+Výsledný text dostaneš po akci e-mailem.
+
+
+Instrukce na začátek;
+
+Kdykoli nebudeš vědět jak dál, zavolej kouče (pomocníka)!
+Dá se to udělat tak, že si na počítač nalepíš ČERVENÝ papírek.
+
+Instrukce (pro ty s vlastním počítačem):
+
+    Spusť si editor
+
+    Spusť si příkazovou řádku
+
+    Aktivuj v příkazové řádce virtuální prostředí
+
+    jestli nevíš jak, volej kouče!
+
+    Spusť příkaz:
+
+    python --version
+
+    Vylep si na počítač ŽLUTÝ papírek
+
+    Kouč to přijde zkontrolovat, po kontrole vylepte ZELENÝ papírek
+
+
+
+
+hlasitost = int(input('Jaká je nastavená hlasitost rádia? '))
+
+if hlasitost < 20:
+     print("Je to dost potichu.")
+elif hlasitost < 40:
+     print("Jako hudba na pozadí dobré.")
+elif hlasitost < 60:
+     print("Skvělé, slyším všechny detaily.")
+elif hlasitost < 80:
+     print("Dobré na party.")
+elif hlasitost < 100:
+     print("Trochu moc nahlas!")
+else:
+    print("Krvácí mi uši!")
+
+
+
