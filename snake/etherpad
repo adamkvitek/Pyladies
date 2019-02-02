@@ -34,8 +34,6 @@ Instrukce (pro ty s vlastním počítačem):
     Kouč to přijde zkontrolovat, po kontrole vylepte ZELENÝ papírek
 
 
-
-
 hlasitost = int(input('Jaká je nastavená hlasitost rádia? '))
 
 if hlasitost < 20:
@@ -51,5 +49,23 @@ elif hlasitost < 100:
 else:
     print("Krvácí mi uši!")
 
+# Napiš funkci paty_pad
+# paty_pad('Hubert')  → 'Huberte'
+# paty_pad('Soňa')  → 'Soňo'
+# paty_pad('Jana')  → 'Jano'
+# paty_pad('Xavier')  → 'Xavier'   :(
+
+# - pokud je jméno Hubert, vrátí 'Huberte'
+# - pokud je poslední písmeno jména 'a':
+#    vrať řetězec poskládaný z:
+#           - všech písmenek kromě posledního
+#           - 'o'
+# - jinak vrátí jméno nezměněné (třeba si toho nikdo nevšimne)
+
+
+
+jmena = ['Aneta', 'Aneta', 'Aneta', 'Barbora', 'Cvetelina', 'Dragana', 'Eliška', 'Eliška', 'Eva', 'Hana', 'Ivana', 'Ivana', 'Ivana', 'Iveta', 'Jana', 'Jana', 'Jaroslava', 'Kamila', 'Kateřina', 'Kateřina', 'Kristina', 'Kristína', 'Kristyna', 'Lenka', 'Lucie', 'Mária', 'Marie', 'Marta', 'Miroslava', 'Monica', 'Natália', 'Romana', 'Růžena', 'Silvia', 'Sylva', 'Tereza', 'Terezie', 'Thanh', 'Veronika', 'Veronika', 'Zdeňka', 'Adam', 'Anežka', 'Kristýna', 'Lucie', 'Martin', 'Michal', 'Ondřej', 'Petr', 'Terezie', 'Zuzana']
+
+snake = [(1, 2), (2, 2), (3, 2), (3, 3), (3, 4), (3, 5), (4, 5)]
 
 
