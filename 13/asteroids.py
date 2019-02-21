@@ -238,11 +238,11 @@ def draw():
             #    draw_circle(obj)
             pyglet.gl.glPopMatrix()
 
-def tick(delta): # parametr kolik ubylo času - pomocí rozdílu - delta = rozdíl
+def tick(delta): # parametr which indicates passed time - using the difference - delta = difference
     for obj in objects:
         obj.tick(delta)
 
-pressed_keys = set() # Množina do které vkládáme klávesy
+pressed_keys = set() # Group in which we add keys
 
 def key_pressed(key, mod):
     pressed_keys.add(key)
