@@ -7,7 +7,7 @@ rules:
     pattern: $SOMEVAR is "..."
     severity: ERROR
 
-- id: react-dangerouslysetinnerhtml
+  - id: react-dangerouslysetinnerhtml
     languages:
       - js
     message: >
@@ -16,7 +16,7 @@ rules:
     patterns:
       - pattern-either:
           - pattern: |
-              <$X dangerouslySetInnerHTML=... />
+              <$X dangerouslySetInnerHTML=/>
           - pattern: |
               {dangerouslySetInnerHTML: ...}
     severity: WARNING
@@ -43,5 +43,13 @@ rules:
       - pattern-either:
           - pattern: '{..., "autoescape": False, ...}'
           - pattern: $D["autoescape"] = False
+    severity: WARNING
+
+  - id: deprecated-api
+    languages:
+      - python
+    message: is_safe_url() is deprecated as of Django 4.0. Use
+      url_has_allowed_host_and_scheme() instead.
+    pattern: django.utils.http.is_safe_url(...)
     severity: WARNING
 
